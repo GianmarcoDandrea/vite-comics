@@ -1,4 +1,6 @@
 <script>
+import ComicsCard from './ComicCard.vue'
+
 export default {
     data() {
         return {
@@ -70,16 +72,11 @@ export default {
                     "type": "comic book"
                 },
                 {
-                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Catwoman_Vol_2_1.jpg/revision/latest?cb=20160303223223",
+                    "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Catwoman_Vol_2_1.jpg",
                     "price": "$16.99",
                     "series": "Catwoman",
                     "type": "graphic novel"
                 }]
-        }
-    },
-    methods: {
-        getImagePath(imgName) {
-            return new URL(`../assets/img/${imgName}`, import.meta.url).href
         }
     },
 
@@ -102,7 +99,7 @@ export default {
 
             <div class="row">
                 <div class="col" v-for="comic in comics">
-                    <ComicsCard />
+                    <ComicsCard :image="comic.thumb" :title="comic.series"/>
                 </div>
             </div>
         </div>
@@ -145,9 +142,7 @@ section {
 
             .col {
                 width: calc(100% / 6);
-                // debug
-                padding: 3rem;
-                border: 1px solid white;
+                padding: 1rem;
             }
 
         }
