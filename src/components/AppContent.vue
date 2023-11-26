@@ -102,6 +102,10 @@ export default {
                     <ComicsCard :image="comic.thumb" :title="comic.series"/>
                 </div>
             </div>
+
+            <button class="load-btn">
+                LOAD MORE
+            </button>
         </div>
     </section>
 
@@ -125,6 +129,7 @@ section {
         position: relative;
         padding: 2rem 0;
         background-color: $dark_section_bg_color;
+        @include flex(column, center, center);
         .current-title{
             color: $dark_section_text_color;
             background-color: $main_color;
@@ -136,9 +141,10 @@ section {
         }
 
         .row {
+            width: 100%;
             padding: 1rem 0;
             color: $dark_section_text_color;
-            @include flex (row, center, center, wrap);
+            @include flex (row, center, flex-start, wrap);
 
             .col {
                 width: calc(100% / 6);
@@ -146,6 +152,16 @@ section {
             }
 
         }
+
+        .load-btn {
+            border: none;
+            background-color: $main_color;
+            color:$dark_section_text_color;
+            padding: 1rem 5.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
 
     }
 }

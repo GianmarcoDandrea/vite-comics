@@ -11,8 +11,10 @@ export default{
 
 <template>
     <div class="card">
-        <img :src="image" alt="">
-        <h2 class="comic-title"> {{ title }}</h2>
+        <div class="comic-cover">
+            <img :src="image" alt="" class="cover">
+        </div>
+        <p class="comic-title"> {{ title }}</p>
     </div>
 </template>
 
@@ -21,10 +23,28 @@ export default{
 @use "../style/partials/mixins" as *;
 
 .card {
-    .comics-title {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    .comic-cover {
+        width: 100%;
+        aspect-ratio: 1;
+
+        .cover {
+            width: 100%;
+            aspect-ratio: 0.9;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .comic-title {
         text-transform: uppercase;
         color: $dark_section_text_color;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
     }
+
+
 }
 
 </style>
