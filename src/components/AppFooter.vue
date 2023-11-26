@@ -48,10 +48,10 @@ export default{
 
             socialIcon: [
                 "footer-facebook.png",
-                "footer-periscope.png",
-                "footer-pinterest.png",
                 "footer-twitter.png",
                 "footer-youtube.png",
+                "footer-pinterest.png",
+                "footer-periscope.png",
             ]
         }
     },
@@ -103,7 +103,7 @@ export default{
 
                 <div class="right-sct">
                     <h3 class="follow-title">
-                        FOLLOW US!
+                        FOLLOW US
                     </h3>
 
                     <ul>
