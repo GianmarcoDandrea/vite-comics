@@ -1,0 +1,32 @@
+// IMPORTS
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+// COMMON
+body {
+    font-family: $text_font_family;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    
+}
+
+.small-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
