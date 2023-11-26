@@ -57,7 +57,6 @@ export default{
             @include flex (row, center, center);
             list-style-type: none;
             gap: 1.5rem;
-            font-family: $text_link_header;
             font-size: 0.9rem;
             font-weight: bold;
 

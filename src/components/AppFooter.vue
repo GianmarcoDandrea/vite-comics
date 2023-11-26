@@ -190,6 +190,7 @@ export default{
                 color: $footer_title_color;
                 padding: 1rem;
                 border: 2px solid $main-color;
+                font-weight: bold
             }
         }
     
@@ -198,7 +199,6 @@ export default{
 
             .follow-title {
                 color: $main_color;
-                font-family: $text_link_header;
             }
             
             ul {
