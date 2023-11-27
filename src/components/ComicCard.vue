@@ -1,8 +1,9 @@
 <script>
+import { objectToString } from '@vue/shared';
+
 export default{
     props: {
-        image: String,
-        title: String,
+        comic: Object,
     },
 
 };
@@ -12,9 +13,9 @@ export default{
 <template>
     <div class="card">
         <div class="comic-cover">
-            <img :src="image" alt="" class="cover">
+            <img :src="comic.thumb" alt="" class="cover">
         </div>
-        <p class="comic-title"> {{ title }}</p>
+        <p class="comic-title"> {{ comic.series }}</p>
     </div>
 </template>
 

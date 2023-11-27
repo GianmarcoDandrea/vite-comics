@@ -99,7 +99,7 @@ export default {
 
             <div class="row">
                 <div class="col" v-for="comic in comics">
-                    <ComicsCard :image="comic.thumb" :title="comic.series"/>
+                    <ComicsCard :comic="comic"/>
                 </div>
             </div>
 
