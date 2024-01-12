@@ -12,13 +12,15 @@ export default{
                         "TV",
                         "Games",
                         "Videos",
-                        "News"]
+                        "News"
+                    ]
                 },
                 {
                     name:"shop",
                     linkItems:[
                         "Shop Dc", 
-                    "Shop DC Collectible"]
+                        "Shop DC Collectible"
+                ]
                 },
                 {
                     name:"dc",
@@ -33,16 +35,18 @@ export default{
                         "CPSC Certificates",
                         "Ratings",
                         "Shop Help",
-                        "Contact Us"]
+                        "Contact Us"
+                    ]
                 },
                 {
                     name:"sites",
                     linkItems:[
                         "DC",
-                    "MAD Magazine", 
-                    "DC Kids", 
-                    "DC Universe", 
-                    "DC Power Visa"]
+                        "MAD Magazine", 
+                        "DC Kids", 
+                        "DC Universe", 
+                        "DC Power Visa"
+                    ]
                 }
             ],
 
